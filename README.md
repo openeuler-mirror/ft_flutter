@@ -3,6 +3,8 @@
 #### 介绍
 this repository provides glfw, skia modules for ft_engine
 
+本模块基于OpenHarmony-3.2-Release，为方天显示引擎提供glfw，modules模块。
+
 #### 软件架构
 软件架构说明
 
