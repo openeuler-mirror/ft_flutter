@@ -30,7 +30,7 @@
 #include "paragraph_style.h"
 #include "placeholder_run.h"
 #include "styled_runs.h"
-#include "third_party/googletest/googletest/include/gtest/gtest_prod.h"  // nogncheck
+// #include "third_party/googletest/googletest/include/gtest/gtest_prod.h"  // nogncheck
 #include "third_party/skia/include/core/SkFontMetrics.h"
 #include "third_party/skia/include/core/SkRect.h"
 #include "utils/WindowsUtils.h"
@@ -123,6 +123,7 @@ class ParagraphTxt : public Paragraph {
 
  private:
   friend class ParagraphBuilderTxt;
+  /*
   FRIEND_TEST(ParagraphTest, SimpleParagraph);
   FRIEND_TEST(ParagraphTest, SimpleRedParagraph);
   FRIEND_TEST(ParagraphTest, RainbowParagraph);
@@ -153,6 +154,7 @@ class ParagraphTxt : public Paragraph {
   FRIEND_TEST(ParagraphTest, FontFallbackParagraph);
   FRIEND_TEST(ParagraphTest, InlinePlaceholder0xFFFCParagraph);
   FRIEND_TEST(ParagraphTest, FontFeaturesParagraph);
+  */
 
   // Starting data to layout.
   std::vector<uint16_t> text_;
