@@ -1,0 +1,53 @@
+# Copyright (c) 2023 Huawei Technologies Co., Ltd. All rights reserved.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//project_build/gn/fangtian.gni")
+import("//ft_build/flutter_config.gni")
+
+external_icu_include_dirs = [
+  "//third_party/icu/icu4c/source/common",
+  "//third_party/icu/icu4c/source/i18n",
+  "//third_party/icu/icu4c/source/ohos",
+  "//third_party/icu/icu4c/source",
+]
+
+config("icu_compile_flags") {
+  cflags_cc = [
+    "-std=c++14",
+    "-fno-exceptions",
+    "-fvisibility-inlines-hidden",
+    "-Os",
+  ]
+
+  cflags = [
+    "-w",
+    "-fstrict-aliasing",
+    "-O3",
+    "-fdata-sections",
+    "-ffunction-sections",
+    "-gline-tables-only",
+    "-funwind-tables",
+    "-Wno-unused-parameter",
+    "-fvisibility=hidden",
+    "-Os",
+  ]
+}
+
+config("icu_config") {
+  include_dirs = external_icu_include_dirs
+}
+
+ft_source_set("ace_libicu") {
+  public_configs = [ ":icu_config" ]
+  configs = [ ":icu_compile_flags" ]
+}
