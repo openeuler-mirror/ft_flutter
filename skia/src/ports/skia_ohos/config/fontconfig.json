@@ -1,23 +1,11 @@
 {
-  "fontdir": ["/system/fonts/"],
+  "fontdir": ["/usr/share/fonts", "/usr/share/fonts/dejavu"],
   "generic": [
     {
-      "family": "HarmonyOS Sans",
+      "family": "DejaVu Serif",
       "alias": [
         {
-          "HarmonyOS-Sans": 0
-        },
-        {
-          "HarmonyOS-Sans-Light": 100
-        },
-        {
-          "HarmonyOS-Sans-Regular": 400
-        },
-        {
-          "HarmonyOS-Sans-Medium": 700
-        },
-        {
-          "HarmonyOS-Sans-Bold": 900
+          "DejaVu Serif Condensed": 100
         }
       ],
       "adjust": [
@@ -36,10 +24,10 @@
       ]
     },
     {
-      "family": "HarmonyOS Sans Condensed",
+      "family": "DejaVu LGC Serif",
       "alias": [
         {
-          "HarmonyOS-Sans-Condensed": 0
+          "DejaVu LGC Serif Condensed": 0
         }
       ]
     }
@@ -48,13 +36,7 @@
     {
       "": [
         {
-          "zh-Hans": "HarmonyOS Sans SC"
-        },
-        {
-          "zh-Hant": "HarmonyOS Sans TC"
-        },
-        {
-          "und-Arab": "HarmonyOS Sans Naskh Arabic UI"
+          "SimSun": "SimSun"
         }
       ]
     }
