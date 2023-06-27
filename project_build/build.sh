@@ -46,5 +46,9 @@ if [[ "$?" -ne 0 ]]; then
 fi
 
 # copy fontconfig.json
-sudo cp out/Debug/x64/obj/ft_build/skia/skia/src/ports/skia_ohos/config/fontconfig.json /etc/
+sudo mkdir -p /usr/local/share/ft/skia
+sudo cp out/Debug/x64/obj/ft_build/skia/skia/src/ports/skia_ohos/config/fontconfig.json /usr/local/share/ft/skia
+sudo mkdir /usr/share/fonts/ft_fonts
+sudo cp ft_build/fonts/* /usr/share/fonts/ft_fonts
+sudo cp out/Debug/x64/thirdparty/flutter/libace_skia_fangtian.so /usr/local/lib64
 echo -e "\033[0;32m[-] Build done.\033[0m"
