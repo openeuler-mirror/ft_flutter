@@ -30,4 +30,6 @@ package_deps = [
     "libdrm-devel",
     "systemd-devel",
     "harfbuzz-devel",
+    "jsoncpp-devel",
+    "expat-devel",
 ]
