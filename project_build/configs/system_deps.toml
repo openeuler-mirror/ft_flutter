@@ -27,6 +27,7 @@ package_deps = [
     "python3",
     "tar",
     "cmake",
+    "ninja-build",
     "libdrm-devel",
     "systemd-devel",
     "harfbuzz-devel",
