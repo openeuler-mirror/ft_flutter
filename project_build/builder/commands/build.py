@@ -24,14 +24,16 @@ class Builder:
         self.args = args
 
         self.project_dir = args.project_dir
-        os_name = "linux"
-        arch = "x64"
-        if args.target_cpu == "auto":
-            arch, os_name = get_machine_info()
+        arch, os_name = get_machine_info()
+        if args.target_cpu != "auto":
+            if arch != args.target_cpu:
+                exit("current mechine is not " + args.target_cpu + " don't use -t " + args.target_cpu)
+            if os_name != "linux":
+                exit("this build system is only support linux")
         self.build_output_dir = os.path.join(args.project_dir, "out", args.build_type.title(), arch)
         self._build_tools_dir = os.path.join(args.project_dir, "prebuilts", "build-tools", os_name+"-"+arch, "bin")
         self.gn_path = os.path.join(self._build_tools_dir, "gn")
-        self.ninja_path = os.path.join(self._build_tools_dir, "ninja")
+        self.ninja_path = "ninja"
 
         self._args_list = []
 
@@ -47,10 +49,27 @@ class Builder:
         return checker.check_system_env(self.project_dir)
 
     def post_build(self) -> bool:
+        # Copy compile_commands.json to project root dir
         if self.args.export_compile_commands is True:
             # return exec_sys_command(['ln', '-sf', os.path.join(self.build_output_dir, 'compile_commands.json'), self.project_dir])[0]
             exec_sys_command(['rm', '-f', os.path.join(self.project_dir, 'compile_commands.json')])
-            return exec_sys_command(['cp', os.path.join(self.build_output_dir, 'compile_commands.json'), self.project_dir])[0]
+            if (exec_sys_command(['cp', os.path.join(self.build_output_dir, 'compile_commands.json'), self.project_dir])[0] == False):
+                return False
+
+        # Install librarys and binarys into specify dir
+        if self.args.install:
+            logger.info(f"Installing to {self.args.install}.")
+            common_output_dir = os.path.join(self.build_output_dir, 'common/common/')
+            output_files = [entry for entry in os.listdir(common_output_dir) if os.path.isfile(os.path.join(common_output_dir, entry))]
+            for output_file in output_files:
+                if output_file.endswith('.so'):
+                    # install dynamic librarys
+                    rst = exec_sys_command(['sudo', 'cp', '-f', os.path.join(self.build_output_dir, 'common/common/', output_file), os.path.join(self.args.install, 'lib64')])
+                    if rst[0] == False : return False
+                elif os.access(os.path.join(common_output_dir, output_file), os.X_OK):
+                    # install binarys
+                    rst = exec_sys_command(['sudo', 'cp', '-f', os.path.join(self.build_output_dir, 'common/common/', output_file), os.path.join(self.args.install, 'bin')])
+                    if rst[0] == False : return False
 
         return True
 
