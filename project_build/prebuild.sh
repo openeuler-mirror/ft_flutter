@@ -31,6 +31,10 @@ if ! command -v pip3 &> /dev/null; then
     echo "pip3 is not installed"
     exit 1
 fi
+if ! command -v python &> /dev/null; then
+    echo "python is not installed"
+    sudo yum install python
+fi
 
 # Check python version
 PYTHON_VERSION=$(python3 --version 2>&1 | awk '{print $2}')
