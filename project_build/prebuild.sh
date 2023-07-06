@@ -33,7 +33,7 @@ if ! command -v pip3 &> /dev/null; then
 fi
 if ! command -v python &> /dev/null; then
     echo "python is not installed"
-    sudo yum install python
+    sudo yum install python -y
 fi
 
 # Check python version
