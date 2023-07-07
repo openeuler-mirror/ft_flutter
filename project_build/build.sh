@@ -44,18 +44,4 @@ if [[ "$?" -ne 0 ]]; then
     echo -e "\033[31m[!] Build failed.\033[0m"
     exit 1
 fi
-
-# copy fontconfig.json
-sudo mkdir -p /usr/local/share/ft/skia
-sudo cp skia/src/ports/skia_ohos/config/fontconfig.json /usr/local/share/ft/skia
-
-sudo mkdir /usr/share/fonts/ft_fonts
-sudo cp ft_build/fonts/* /usr/share/fonts/ft_fonts
-
-ARCHNAME=`uname -m`
-if [[ ${ARCHNAME} == "x86_64" ]]; then
-	sudo cp out/Debug/x64/thirdparty/flutter/libace_skia_fangtian.so /usr/lib64
-elif [[ ${ARCHNAME}  == "aarch64" ]]; then
-	sudo cp out/Debug/aarch64/thirdparty/flutter/libace_skia_fangtian.so /usr/lib64
-fi
 echo -e "\033[0;32m[-] Build done.\033[0m"

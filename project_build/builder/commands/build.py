@@ -48,6 +48,21 @@ class Builder:
     def pre_build(self) -> bool:
         return checker.check_system_env(self.project_dir)
 
+    def copy_all_file(self, src_path, dest_path) -> bool:
+        if not os.path.exists(src_path):
+            return True
+        if not os.path.exists(dest_path):
+            rst = exec_sys_command(['sudo', 'mkdir', '-p', dest_path])
+            if rst[0] == False : return False
+        output_files = [entry for entry in os.listdir(src_path) if os.path.isfile(os.path.join(src_path, entry))]
+        for output_file in output_files:
+            rst = exec_sys_command(['sudo', 'cp', os.path.join(src_path, output_file) , dest_path])
+            if rst[0] == False : return False
+        output_dirs = [entry for entry in os.listdir(src_path) if os.path.isdir(os.path.join(src_path, entry))]
+        for output_dir in output_dirs:
+            rst = exec_sys_command(['sudo', 'cp', '-r', os.path.join(src_path, output_dir) , dest_path])
+            if rst[0] == False : return False
+        return True
     def post_build(self) -> bool:
         # Copy compile_commands.json to project root dir
         if self.args.export_compile_commands is True:
@@ -59,17 +74,15 @@ class Builder:
         # Install librarys and binarys into specify dir
         if self.args.install:
             logger.info(f"Installing to {self.args.install}.")
-            common_output_dir = os.path.join(self.build_output_dir, 'common/common/')
-            output_files = [entry for entry in os.listdir(common_output_dir) if os.path.isfile(os.path.join(common_output_dir, entry))]
-            for output_file in output_files:
-                if output_file.endswith('.so'):
-                    # install dynamic librarys
-                    rst = exec_sys_command(['sudo', 'cp', '-f', os.path.join(self.build_output_dir, 'common/common/', output_file), os.path.join(self.args.install, 'lib64')])
-                    if rst[0] == False : return False
-                elif os.access(os.path.join(common_output_dir, output_file), os.X_OK):
-                    # install binarys
-                    rst = exec_sys_command(['sudo', 'cp', '-f', os.path.join(self.build_output_dir, 'common/common/', output_file), os.path.join(self.args.install, 'bin')])
-                    if rst[0] == False : return False
+            rst = self.copy_all_file(os.path.join(self.build_output_dir, 'lib/'), os.path.join(self.args.install, 'lib64'))
+            if rst == False : return False 
+            rst = self.copy_all_file(os.path.join(self.build_output_dir, 'bin/'), os.path.join(self.args.install, 'bin'))
+            if rst == False : return False 
+            rst = self.copy_all_file(os.path.join(self.build_output_dir, 'cfg/'), os.path.join(self.args.install, 'local/share/ft/'))
+            if rst == False : return False 
+
+            rst = self.copy_all_file(os.path.join(self.project_dir, "ft_build/fonts/"), "/usr/share/fonts/ft_fonts")
+            if rst == False : return False 
 
         return True
 

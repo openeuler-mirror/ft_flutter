@@ -71,50 +71,52 @@ python3 ${PROJECT_DIR}/project_build/builder.py check --install-packages $*
 # =============================================================================
 #
 # download prebuild files
+cd $home
+PREBUILD_DIR="ft_prebuild"
+if [ ! -d ${PREBUILD_DIR} ]; then
+mkdir ${PREBUILD_DIR}
+fi
+cd ${PREBUILD_DIR}
+FT_PREBUILD_DIR=$(pwd)
 
 # install prebuild library
-if [ ! -d ${PROJECT_DIR}/prebuilts/libs ]; then
-git clone https://gitee.com/yanansong/ft_engine_prebuild.git ${PROJECT_DIR}/prebuilts/libs
+if [ ! -d ${FT_PREBUILD_DIR}/libs ]; then
+git clone https://gitee.com/yanansong/ft_engine_prebuild.git -b rpms ${FT_PREBUILD_DIR}/libs
 fi
 
-# copy prebuild library to /usr/lib64
 ARCHNAME=`uname -m`
-cd ${PROJECT_DIR}/prebuilts/libs/library/${ARCHNAME}
-sudo cp -fr *.so /usr/local/lib64
-cd ${PROJECT_DIR}
-rm -fr ${PROJECT_DIR}/prebuilts/libs
 
-# install prebuild include. delete download files
-if [ ! -d ${PROJECT_DIR}/prebuilts/inc ]; then
-git clone https://gitee.com/yanansong/devel_inc.git ${PROJECT_DIR}/prebuilts/inc
+cd ${FT_PREBUILD_DIR}/libs/rpms/${ARCHNAME}
+sudo ./installRPM
+
+# install prebuild include.
+if [ ! -d ${FT_PREBUILD_DIR}/inc ]; then
+git clone https://gitee.com/yanansong/devel_inc.git ${FT_PREBUILD_DIR}/inc
 fi
 
-# copy include files to /usr/include. delete download files
-cd ${PROJECT_DIR}/prebuilts/inc
+# copy include files to /usr/include. 
+cd ${FT_PREBUILD_DIR}/inc
 sudo cp -fr * /usr/local/include
-cd ${PROJECT_DIR}
-rm -fr ${PROJECT_DIR}/prebuilts/inc
 
 # install ft_surface_wrapper
-if [ ! -d ${PROJECT_DIR}/prebuilts/rpm/ft_surface_wrapper ]; then
-    git clone https://gitee.com/ShaoboFeng/ft_surface_wrapper.git ${PROJECT_DIR}/prebuilts/rpm/ft_surface_wrapper
+if [ ! -d ${FT_PREBUILD_DIR}/rpm/ft_surface_wrapper ]; then
+    git clone https://gitee.com/ShaoboFeng/ft_surface_wrapper.git ${FT_PREBUILD_DIR}/rpm/ft_surface_wrapper
 fi
-cd ${PROJECT_DIR}/prebuilts/rpm/ft_surface_wrapper/
-if [ ! -d ${PROJECT_DIR}/prebuilts/rpm/ft_surface_wrapper/build ]; then
+cd ${FT_PREBUILD_DIR}/rpm/ft_surface_wrapper/
+if [ ! -d ${FT_PREBUILD_DIR}/rpm/ft_surface_wrapper/build ]; then
     mkdir build
 fi
 cd build
 cmake ..
 make -j6
 sudo make install
-rm -fr ${PROJECT_DIR}/prebuilts/rpm/ft_surface_wrapper
 cd ${PROJECT_DIR}
 
 # install mesa_fangtian
-if [ ! -d ${PROJECT_DIR}/prebuilts/rpm/binary ]; then
-    git clone https://gitee.com/ShaoboFeng/rpm-fangtian.git ${PROJECT_DIR}/prebuilts/rpm/binary
+if [ ! -d ${FT_PREBUILD_DIR}/rpm/binary ]; then
+    git clone https://gitee.com/ShaoboFeng/rpm-fangtian.git ${FT_PREBUILD_DIR}/rpm/binary
 fi
-cd ${PROJECT_DIR}/prebuilts/rpm/binary
+cd ${FT_PREBUILD_DIR}/rpm/binary
 ./install.sh
 cd ${PROJECT_DIR}
 

@@ -28,9 +28,9 @@ template("ft_prebuilt_etc") {
     assert(defined(invoker.source), "[GN ERROR] ${target_name} error: source must be defined.")
 
     if (defined(invoker.output)) {
-        _copy_out_dir = "${target_out_dir}/${invoker.output}"
+        _copy_out_dir = "${root_out_dir}/cfg/${invoker.output}"
     } else {
-        _copy_out_dir = "${target_out_dir}/${invoker.source}"
+        _copy_out_dir = "${root_out_dir}/cfg/"
     }
 
     advanced_copy(target_name) {
