@@ -6,7 +6,7 @@
 
 #include "flutter/fml/make_copyable.h"
 #include "third_party/dart/runtime/include/dart_api.h"
-#include "third_party/skia/include/core/SkPixelRef.h"
+#include "include/core/SkPixelRef.h"
 
 namespace flutter {
 

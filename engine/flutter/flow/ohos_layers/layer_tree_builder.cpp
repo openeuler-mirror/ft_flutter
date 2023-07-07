@@ -7,12 +7,12 @@
 
 #include "flutter/flow/ohos_layers/layer_tree_builder.h"
 
-#include "third_party/skia/include/core/SkBlendMode.h"
-#include "third_party/skia/include/core/SkColorFilter.h"
-#include "third_party/skia/include/core/SkMatrix.h"
-#include "third_party/skia/include/core/SkPoint.h"
-#include "third_party/skia/include/core/SkRefCnt.h"
-#include "third_party/skia/include/core/SkSize.h"
+#include "include/core/SkBlendMode.h"
+#include "include/core/SkColorFilter.h"
+#include "include/core/SkMatrix.h"
+#include "include/core/SkPoint.h"
+#include "include/core/SkRefCnt.h"
+#include "include/core/SkSize.h"
 
 #include "flutter/flow/ohos_layers/backdrop_filter_layer.h"
 #include "flutter/flow/ohos_layers/clip_path_layer.h"

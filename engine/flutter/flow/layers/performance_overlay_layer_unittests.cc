@@ -7,8 +7,8 @@
 #include "flutter/flow/raster_cache.h"
 #include "flutter/fml/build_config.h"
 
-#include "third_party/skia/include/core/SkSurface.h"
-#include "third_party/skia/include/utils/SkBase64.h"
+#include "include/core/SkSurface.h"
+#include "include/utils/SkBase64.h"
 
 #include "gtest/gtest.h"
 

@@ -10,7 +10,7 @@
 #include "flutter/fml/macros.h"
 #include "flutter/fml/time/time_delta.h"
 #include "flutter/fml/time/time_point.h"
-#include "third_party/skia/include/core/SkCanvas.h"
+#include "include/core/SkCanvas.h"
 
 namespace flutter {
 

@@ -8,7 +8,7 @@
 #ifndef FLUTTER_FLOW_OHOS_LAYERS_TRANSFORM_LAYER_H
 #define FLUTTER_FLOW_OHOS_LAYERS_TRANSFORM_LAYER_H
 
-#include "third_party/skia/include/core/SkMatrix.h"
+#include "include/core/SkMatrix.h"
 
 #include "flutter/flow/ohos_layers/container_layer.h"
 

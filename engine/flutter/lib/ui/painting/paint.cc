@@ -8,11 +8,11 @@
 #include "flutter/lib/ui/painting/color_filter.h"
 #include "flutter/lib/ui/painting/image_filter.h"
 #include "flutter/lib/ui/painting/shader.h"
-#include "third_party/skia/include/core/SkColorFilter.h"
-#include "third_party/skia/include/core/SkImageFilter.h"
-#include "third_party/skia/include/core/SkMaskFilter.h"
-#include "third_party/skia/include/core/SkShader.h"
-#include "third_party/skia/include/core/SkString.h"
+#include "include/core/SkColorFilter.h"
+#include "include/core/SkImageFilter.h"
+#include "include/core/SkMaskFilter.h"
+#include "include/core/SkShader.h"
+#include "include/core/SkString.h"
 
 namespace flutter {
 

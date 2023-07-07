@@ -4,8 +4,8 @@
 
 #include "flutter/flow/raster_cache.h"
 #include "gtest/gtest.h"
-#include "third_party/skia/include/core/SkPicture.h"
-#include "third_party/skia/include/core/SkPictureRecorder.h"
+#include "include/core/SkPicture.h"
+#include "include/core/SkPictureRecorder.h"
 
 sk_sp<SkPicture> GetSamplePicture() {
   SkPictureRecorder recorder;

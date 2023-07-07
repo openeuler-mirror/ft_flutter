@@ -18,6 +18,7 @@ flutter_part = "flutter"
 flutter_subsystem = "thirdparty"
 
 flutter_root = "//"
+skia_dir_root = "//skia"
 
 ace_flutter_engine_root = "//ft_build"
 
