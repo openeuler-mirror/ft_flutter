@@ -6,8 +6,8 @@
 
 #include "flutter/flow/layers/layer.h"
 #include "flutter/fml/trace_event.h"
-#include "third_party/skia/include/core/SkPictureRecorder.h"
-#include "third_party/skia/include/utils/SkNWayCanvas.h"
+#include "include/core/SkPictureRecorder.h"
+#include "include/utils/SkNWayCanvas.h"
 
 namespace flutter {
 

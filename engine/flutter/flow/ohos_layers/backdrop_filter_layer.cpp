@@ -7,7 +7,7 @@
 
 #include "flutter/flow/ohos_layers/backdrop_filter_layer.h"
 
-#include "third_party/skia/include/core/SkCanvas.h"
+#include "include/core/SkCanvas.h"
 
 #include "flutter/flow/ohos_layers/paint_context.h"
 

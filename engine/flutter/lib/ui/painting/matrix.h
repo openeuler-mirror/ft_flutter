@@ -6,7 +6,7 @@
 #define FLUTTER_LIB_UI_PAINTING_MATRIX_H_
 
 #include "flutter/lib/ui/dart_wrapper.h"
-#include "third_party/skia/include/core/SkMatrix.h"
+#include "include/core/SkMatrix.h"
 
 namespace flutter {
 

@@ -8,7 +8,7 @@
 #include "flutter/lib/ui/dart_wrapper.h"
 #include "flutter/lib/ui/painting/matrix.h"
 #include "flutter/lib/ui/painting/shader.h"
-#include "third_party/skia/include/effects/SkGradientShader.h"
+#include "include/effects/SkGradientShader.h"
 
 namespace tonic {
 class DartLibraryNatives;
