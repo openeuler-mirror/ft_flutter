@@ -7,8 +7,8 @@
 
 #include "flutter/lib/ui/dart_wrapper.h"
 #include "flutter/lib/ui/painting/rrect.h"
-#include "third_party/skia/include/core/SkPath.h"
-#include "third_party/skia/include/pathops/SkPathOps.h"
+#include "include/core/SkPath.h"
+#include "include/pathops/SkPathOps.h"
 
 namespace tonic {
 class DartLibraryNatives;

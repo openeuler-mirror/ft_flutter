@@ -12,8 +12,8 @@
 
 #include "flutter/assets/asset_manager.h"
 #include "flutter/fml/macros.h"
-#include "third_party/skia/include/core/SkFontMgr.h"
-#include "third_party/skia/include/core/SkTypeface.h"
+#include "include/core/SkFontMgr.h"
+#include "include/core/SkTypeface.h"
 #include "txt/font_asset_provider.h"
 
 namespace flutter {

@@ -4,7 +4,7 @@
 
 #include "flutter/lib/ui/semantics/semantics_update_builder.h"
 
-#include "third_party/skia/include/core/SkScalar.h"
+#include "include/core/SkScalar.h"
 
 namespace flutter {
 

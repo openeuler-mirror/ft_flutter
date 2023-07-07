@@ -8,8 +8,8 @@
 #ifndef FLUTTER_FLOW_OHOS_LAYERS_LAYER_H
 #define FLUTTER_FLOW_OHOS_LAYERS_LAYER_H
 
-#include "third_party/skia/include/core/SkRRect.h"
-#include "third_party/skia/include/core/SkRect.h"
+#include "include/core/SkRRect.h"
+#include "include/core/SkRect.h"
 
 #include "flutter/fml/macros.h"
 

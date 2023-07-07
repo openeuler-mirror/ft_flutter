@@ -6,7 +6,7 @@
 
 #include <ostream>
 
-#include "third_party/skia/include/core/SkString.h"
+#include "include/core/SkString.h"
 
 std::ostream& operator<<(std::ostream& os,
                          const flutter::MatrixDecomposition& m) {

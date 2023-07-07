@@ -8,7 +8,7 @@
 #ifndef FLUTTER_FLOW_OHOS_LAYERS_CLIP_PATH_LAYER_H
 #define FLUTTER_FLOW_OHOS_LAYERS_CLIP_PATH_LAYER_H
 
-#include "third_party/skia/include/core/SkPath.h"
+#include "include/core/SkPath.h"
 
 #include "flutter/flow/ohos_layers/container_layer.h"
 

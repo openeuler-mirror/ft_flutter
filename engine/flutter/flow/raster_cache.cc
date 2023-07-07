@@ -10,10 +10,10 @@
 #include "flutter/flow/paint_utils.h"
 #include "flutter/fml/logging.h"
 #include "flutter/fml/trace_event.h"
-#include "third_party/skia/include/core/SkCanvas.h"
-#include "third_party/skia/include/core/SkImage.h"
-#include "third_party/skia/include/core/SkPicture.h"
-#include "third_party/skia/include/core/SkSurface.h"
+#include "include/core/SkCanvas.h"
+#include "include/core/SkImage.h"
+#include "include/core/SkPicture.h"
+#include "include/core/SkSurface.h"
 
 namespace flutter {
 

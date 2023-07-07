@@ -6,7 +6,7 @@
 #define FLUTTER_LIB_UI_PAINTING_VERTICES_H_
 
 #include "flutter/lib/ui/dart_wrapper.h"
-#include "third_party/skia/include/core/SkVertices.h"
+#include "include/core/SkVertices.h"
 
 namespace tonic {
 class DartLibraryNatives;

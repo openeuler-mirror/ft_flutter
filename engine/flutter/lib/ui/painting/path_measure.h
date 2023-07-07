@@ -9,8 +9,8 @@
 
 #include "flutter/lib/ui/dart_wrapper.h"
 #include "flutter/lib/ui/painting/path.h"
-#include "third_party/skia/include/core/SkContourMeasure.h"
-#include "third_party/skia/include/core/SkPath.h"
+#include "include/core/SkContourMeasure.h"
+#include "include/core/SkPath.h"
 
 namespace tonic {
 class DartLibraryNatives;

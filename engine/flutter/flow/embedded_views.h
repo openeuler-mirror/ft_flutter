@@ -9,13 +9,13 @@
 
 #include "flutter/fml/gpu_thread_merger.h"
 #include "flutter/fml/memory/ref_counted.h"
-#include "third_party/skia/include/core/SkCanvas.h"
-#include "third_party/skia/include/core/SkPath.h"
-#include "third_party/skia/include/core/SkPoint.h"
-#include "third_party/skia/include/core/SkRRect.h"
-#include "third_party/skia/include/core/SkRect.h"
-#include "third_party/skia/include/core/SkSize.h"
-#include "third_party/skia/include/core/SkSurface.h"
+#include "include/core/SkCanvas.h"
+#include "include/core/SkPath.h"
+#include "include/core/SkPoint.h"
+#include "include/core/SkRRect.h"
+#include "include/core/SkRect.h"
+#include "include/core/SkSize.h"
+#include "include/core/SkSurface.h"
 
 namespace flutter {
 

@@ -13,8 +13,8 @@
 #include "flutter/flow/layers/layer.h"
 #include "flutter/fml/macros.h"
 #include "flutter/fml/time/time_delta.h"
-#include "third_party/skia/include/core/SkPicture.h"
-#include "third_party/skia/include/core/SkSize.h"
+#include "include/core/SkPicture.h"
+#include "include/core/SkSize.h"
 
 namespace flutter {
 

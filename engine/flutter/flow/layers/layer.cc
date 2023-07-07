@@ -5,7 +5,7 @@
 #include "flutter/flow/layers/layer.h"
 
 #include "flutter/flow/paint_utils.h"
-#include "third_party/skia/include/core/SkColorFilter.h"
+#include "include/core/SkColorFilter.h"
 
 namespace flutter {
 

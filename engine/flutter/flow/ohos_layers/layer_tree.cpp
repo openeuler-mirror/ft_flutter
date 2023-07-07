@@ -7,7 +7,7 @@
 
 #include "flutter/flow/ohos_layers/layer_tree.h"
 
-#include "third_party/skia/include/core/SkMatrix.h"
+#include "include/core/SkMatrix.h"
 
 namespace flutter::OHOS {
 

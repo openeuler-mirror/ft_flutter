@@ -10,8 +10,8 @@
 #include "flutter/lib/ui/painting/image.h"
 #include "flutter/lib/ui/painting/matrix.h"
 #include "flutter/lib/ui/painting/shader.h"
-#include "third_party/skia/include/core/SkMatrix.h"
-#include "third_party/skia/include/core/SkShader.h"
+#include "include/core/SkMatrix.h"
+#include "include/core/SkShader.h"
 
 namespace tonic {
 class DartLibraryNatives;

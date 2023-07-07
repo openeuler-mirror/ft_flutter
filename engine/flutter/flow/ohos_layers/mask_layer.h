@@ -7,9 +7,9 @@
 #define FLUTTER_FLOW_OHOS_LAYERS_MASK_LAYER_H
 
 #include "experimental/svg/model/SkSVGDOM.h"
-#include "third_party/skia/include/core/SkPaint.h"
-#include "third_party/skia/include/core/SkPath.h"
-#include "third_party/skia/include/core/SkStream.h"
+#include "include/core/SkPaint.h"
+#include "include/core/SkPath.h"
+#include "include/core/SkStream.h"
 
 #include "flutter/flow/ohos_layers/container_layer.h"
 #include "flutter/flow/ohos_layers/layer.h"

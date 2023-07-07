@@ -7,8 +7,8 @@
 #include <algorithm>
 #include <limits>
 
-#include "third_party/skia/include/core/SkPath.h"
-#include "third_party/skia/include/core/SkSurface.h"
+#include "include/core/SkPath.h"
+#include "include/core/SkSurface.h"
 
 namespace flutter {
 

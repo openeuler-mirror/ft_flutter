@@ -14,8 +14,8 @@
 #include "flutter/flow/texture.h"
 #include "flutter/fml/gpu_thread_merger.h"
 #include "flutter/fml/macros.h"
-#include "third_party/skia/include/core/SkCanvas.h"
-#include "third_party/skia/include/core/SkPictureRecorder.h"
+#include "include/core/SkCanvas.h"
+#include "include/core/SkPictureRecorder.h"
 
 namespace flutter {
 

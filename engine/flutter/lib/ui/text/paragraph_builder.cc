@@ -18,7 +18,7 @@
 #include "flutter/third_party/txt/src/txt/text_decoration.h"
 #include "flutter/third_party/txt/src/txt/text_style.h"
 #include "third_party/icu/source/common/unicode/ustring.h"
-#include "third_party/skia/include/core/SkColor.h"
+#include "include/core/SkColor.h"
 
 namespace flutter {
 namespace {

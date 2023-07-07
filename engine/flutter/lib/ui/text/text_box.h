@@ -5,7 +5,7 @@
 #ifndef FLUTTER_LIB_UI_TEXT_TEXT_BOX_H_
 #define FLUTTER_LIB_UI_TEXT_TEXT_BOX_H_
 
-#include "third_party/skia/include/core/SkRect.h"
+#include "include/core/SkRect.h"
 #include "flutter/lib/ui/dart_wrapper.h"
 
 namespace flutter {

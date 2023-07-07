@@ -273,6 +273,9 @@ template("flutter_engine_flow") {
       "$flutter_root/engine/flutter/flow/texture.cc",
     ]
 
+    include_dirs = [
+      "$skia_dir_root",
+    ]
     public_deps = [
       ":flutter_engine_fml_$platform",
       "$ace_flutter_engine_root/skia:ace_skia_$platform",
