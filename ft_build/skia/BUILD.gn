@@ -298,8 +298,6 @@ ft_shared_library("ace_skia_fangtian") {
   configs = [ ":skia_config" ]
   public_configs = [ ":skia_public_config", ":system_harfbuzz_config" ]
 
-  part_name = flutter_part
-  subsystem_name = flutter_subsystem
   deps = [
     ":make_third_party_skia_include_dir",
     ":ace_fontmgr",
@@ -1274,6 +1272,7 @@ config("ace_fontmgr_standard_config") {
 
 ft_prebuilt_etc("ace_fontconfig.json") {
   source = "$flutter_root/skia/src/ports/skia_ohos/config/fontconfig.json"
+  output = "skia/fontconfig.json"
 }
 
 ft_source_set("ace_fontmgr_standard") {
