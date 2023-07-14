@@ -1,0 +1,63 @@
+# Copyright (c) 2023 Huawei Technologies Co., Ltd. All rights reserved.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//build/gn/fangtian.gni")
+import("//ace_engine/ft_build/ace_config.gni")
+import("../flutter_config.gni")
+
+# symbol link for skia include dirs
+third_party_skia_override_path = root_out_dir + "/override/third_party"
+
+template("make_skia_include_dir") {
+  forward_variables_from(invoker, "*")
+
+  action("make_${target_name}_skia_include_dir") {
+    script = "make_skia_include_dir.py"
+    inputs = [ src_path ]
+
+    # refer to tmp.txt that doesn't exist because we need to relink the dir to support run on different build dir.
+    outputs = [ "${dst_path}/tmp.txt" ]
+    args = [
+      rebase_path(dst_path, root_build_dir),
+      rebase_path(src_path, root_build_dir),
+    ]
+  }
+}
+
+make_skia_include_dir("third_party") {
+  src_path = "$flutter_root/skia"
+  dst_path = third_party_skia_override_path + "/third_party"
+}
+
+config("skia_public_config") {
+  include_dirs = [
+    "$flutter_root/skia",
+    "$third_party_skia_override_path",
+  ]
+}
+
+config("system_harfbuzz_config") {
+  defines = [ "USE_SYSTEM_HARFBUZZ" ]
+}
+
+group("ace_skia_fangtian") {
+  public_configs = [
+    ":skia_public_config",
+    ":system_harfbuzz_config",
+  ]
+  public_deps = [ 
+    ":make_third_party_skia_include_dir",
+    "//build/gn/configs/system_libs:harfbuzz",
+    "//build/gn/configs/system_libs:skia"
+  ]
+}
