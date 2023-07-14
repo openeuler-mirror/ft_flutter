@@ -1,6 +1,6 @@
 # Copyright (c) Huawei Technologies Co., Ltd. 2021-2021. All rights reserved.
 
-import("//build/ohos.gni")
+import("//build/gn/fangtian.gni")
 import("//third_party/flutter/glfw/glfw_ace_config.gni")
 
 config("glfw_inner_headers") {
@@ -11,7 +11,7 @@ config("glfw_config_mac") {
   cflags = [ "-Wno-sign-compare" ]
 }
 
-ohos_shared_library("glfw") {
+ft_shared_library("glfw") {
   defines = [ "PREVIEW" ]
   include_dirs = [ "src" ]
   public = [
