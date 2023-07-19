@@ -145,7 +145,7 @@ template("flutter_platform_glfw") {
       ":flutter_platform_common_client_wrapper",
     ]
 
-    deps += [ "//build/gn/configs/system_libs:glfw" ]
+    deps += [ "$flutter_root/glfw:glfw" ]
   }
 }
 
