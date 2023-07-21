@@ -5,7 +5,7 @@
 #ifndef FLUTTER_LIB_UI_UI_DART_STATE_H_
 #define FLUTTER_LIB_UI_UI_DART_STATE_H_
 
-#include "third_party/skia/include/gpu/GrContext.h"
+#include "include/gpu/GrContext.h"
 
 #include <map>
 #include <memory>

@@ -7,8 +7,8 @@
 
 #include "flutter/flow/ohos_layers/clip_rect_layer.h"
 
-#include "third_party/skia/include/core/SkCanvas.h"
-#include "third_party/skia/include/core/SkRRect.h"
+#include "include/core/SkCanvas.h"
+#include "include/core/SkRRect.h"
 
 #include "flutter/flow/ohos_layers/paint_context.h"
 

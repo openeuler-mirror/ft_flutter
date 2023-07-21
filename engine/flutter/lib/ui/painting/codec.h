@@ -7,9 +7,9 @@
 
 #include "flutter/lib/ui/dart_wrapper.h"
 #include "flutter/lib/ui/painting/frame_info.h"
-#include "third_party/skia/include/codec/SkCodec.h"
-#include "third_party/skia/include/core/SkBitmap.h"
-#include "third_party/skia/include/core/SkImage.h"
+#include "include/codec/SkCodec.h"
+#include "include/core/SkBitmap.h"
+#include "include/core/SkImage.h"
 
 using tonic::DartPersistentValue;
 

@@ -26,8 +26,8 @@
 #endif
 
 #include "experimental/svg/model/SkSVGDOM.h"
-#include "third_party/skia/include/core/SkPaint.h"
-#include "third_party/skia/include/core/SkPath.h"
+#include "include/core/SkPaint.h"
+#include "include/core/SkPath.h"
 
 namespace flutter {
 

@@ -8,7 +8,7 @@
 #include "flutter/flow/skia_gpu_object.h"
 #include "flutter/lib/ui/dart_wrapper.h"
 #include "flutter/lib/ui/ui_dart_state.h"
-#include "third_party/skia/include/core/SkShader.h"
+#include "include/core/SkShader.h"
 
 namespace flutter {
 

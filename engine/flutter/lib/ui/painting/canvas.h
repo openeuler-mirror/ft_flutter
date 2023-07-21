@@ -12,8 +12,8 @@
 #include "flutter/lib/ui/painting/picture_recorder.h"
 #include "flutter/lib/ui/painting/rrect.h"
 #include "flutter/lib/ui/painting/vertices.h"
-#include "third_party/skia/include/core/SkCanvas.h"
-#include "third_party/skia/include/utils/SkShadowUtils.h"
+#include "include/core/SkCanvas.h"
+#include "include/utils/SkShadowUtils.h"
 
 namespace tonic {
 class DartLibraryNatives;

@@ -4,8 +4,8 @@
 
 #include "flutter/flow/layers/mask_layer.h"
 
-#include "third_party/skia/include/core/SkMaskFilter.h"
-#include "third_party/skia/include/effects/SkLumaColorFilter.h"
+#include "include/core/SkMaskFilter.h"
+#include "include/effects/SkLumaColorFilter.h"
 
 namespace flutter {
 

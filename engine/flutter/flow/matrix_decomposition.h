@@ -6,9 +6,9 @@
 #define FLUTTER_FLOW_MATRIX_DECOMPOSITION_H_
 
 #include "flutter/fml/macros.h"
-#include "third_party/skia/include/core/SkMatrix.h"
-#include "third_party/skia/include/core/SkMatrix44.h"
-#include "third_party/skia/include/core/SkPoint3.h"
+#include "include/core/SkMatrix.h"
+#include "include/core/SkMatrix44.h"
+#include "include/core/SkPoint3.h"
 
 namespace flutter {
 

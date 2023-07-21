@@ -11,8 +11,8 @@
 #include <memory>
 #include <stdint.h>
 
-#include "third_party/skia/include/core/SkPicture.h"
-#include "third_party/skia/include/core/SkSize.h"
+#include "include/core/SkPicture.h"
+#include "include/core/SkSize.h"
 
 #include "flutter/flow/ohos_layers/layer.h"
 

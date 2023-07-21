@@ -12,8 +12,8 @@
 #include "flutter/flow/raster_cache_key.h"
 #include "flutter/fml/macros.h"
 #include "flutter/fml/memory/weak_ptr.h"
-#include "third_party/skia/include/core/SkImage.h"
-#include "third_party/skia/include/core/SkSize.h"
+#include "include/core/SkImage.h"
+#include "include/core/SkSize.h"
 
 namespace flutter {
 

@@ -6,7 +6,7 @@
 #define FLUTTER_LIB_UI_COLOR_FILTER_H_
 
 #include "flutter/lib/ui/dart_wrapper.h"
-#include "third_party/skia/include/core/SkColorFilter.h"
+#include "include/core/SkColorFilter.h"
 
 using tonic::DartPersistentValue;
 

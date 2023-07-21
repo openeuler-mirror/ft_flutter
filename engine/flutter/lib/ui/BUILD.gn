@@ -103,7 +103,11 @@ source_set("ui") {
     "window/window.cc",
     "window/window.h",
   ]
-
+  
+  include_dirs = [
+    "$skia_dir_root",
+  ]
+  
   public_configs = [ "$flutter_root:config" ]
 
   deps = [

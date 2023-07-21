@@ -5,9 +5,9 @@
 #ifndef FLUTTER_FLOW_PAINT_UTILS_H_
 #define FLUTTER_FLOW_PAINT_UTILS_H_
 
-#include "third_party/skia/include/core/SkCanvas.h"
-#include "third_party/skia/include/core/SkColor.h"
-#include "third_party/skia/include/core/SkRect.h"
+#include "include/core/SkCanvas.h"
+#include "include/core/SkColor.h"
+#include "include/core/SkRect.h"
 
 namespace flutter {
 

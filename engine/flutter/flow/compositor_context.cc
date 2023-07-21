@@ -5,7 +5,7 @@
 #include "flutter/flow/compositor_context.h"
 
 #include "flutter/flow/layers/layer_tree.h"
-#include "third_party/skia/include/core/SkCanvas.h"
+#include "include/core/SkCanvas.h"
 
 namespace flutter {
 

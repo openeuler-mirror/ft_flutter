@@ -6,7 +6,7 @@
 
 #include "flutter/fml/make_copyable.h"
 #include "flutter/fml/trace_event.h"
-#include "third_party/skia/include/codec/SkCodec.h"
+#include "include/codec/SkCodec.h"
 
 namespace flutter {
 

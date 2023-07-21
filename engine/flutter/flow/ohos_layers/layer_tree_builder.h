@@ -13,12 +13,12 @@
 #include <stack>
 
 #include "experimental/svg/model/SkSVGDOM.h"
-#include "third_party/skia/include/core/SkImageFilter.h"
-#include "third_party/skia/include/core/SkPath.h"
-#include "third_party/skia/include/core/SkPaint.h"
-#include "third_party/skia/include/core/SkPicture.h"
-#include "third_party/skia/include/core/SkRRect.h"
-#include "third_party/skia/include/core/SkShader.h"
+#include "include/core/SkImageFilter.h"
+#include "include/core/SkPath.h"
+#include "include/core/SkPaint.h"
+#include "include/core/SkPicture.h"
+#include "include/core/SkRRect.h"
+#include "include/core/SkShader.h"
 
 #include "flutter/flow/ohos_layers/container_layer.h"
 #include "flutter/flow/ohos_layers/layer.h"

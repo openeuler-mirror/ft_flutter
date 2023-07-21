@@ -9,9 +9,9 @@
 #include <fuchsia/ui/views/cpp/fidl.h>
 #include <lib/ui/scenic/cpp/id.h>
 #include <lib/ui/scenic/cpp/resources.h>
-#include <third_party/skia/include/core/SkMatrix.h>
-#include <third_party/skia/include/core/SkPoint.h>
-#include <third_party/skia/include/core/SkSize.h>
+#include <include/core/SkMatrix.h>
+#include <include/core/SkPoint.h>
+#include <include/core/SkSize.h>
 #include <zircon/types.h>
 
 #include <memory>
