@@ -7,7 +7,7 @@
 
 #include "flutter/flow/layers/container_layer.h"
 
-#include "third_party/skia/include/core/SkImageFilter.h"
+#include "include/core/SkImageFilter.h"
 
 namespace flutter {
 

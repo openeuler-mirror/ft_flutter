@@ -17,9 +17,9 @@
 #include "flutter/lib/ui/painting/matrix.h"
 #include "flutter/lib/ui/ui_dart_state.h"
 #include "flutter/lib/ui/window/window.h"
-#include "third_party/skia/include/core/SkBitmap.h"
-#include "third_party/skia/include/core/SkCanvas.h"
-#include "third_party/skia/include/core/SkRSXform.h"
+#include "include/core/SkBitmap.h"
+#include "include/core/SkCanvas.h"
+#include "include/core/SkRSXform.h"
 
 using tonic::ToDart;
 

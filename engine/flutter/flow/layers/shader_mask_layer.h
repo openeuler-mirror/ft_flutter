@@ -7,7 +7,7 @@
 
 #include "flutter/flow/layers/container_layer.h"
 
-#include "third_party/skia/include/core/SkShader.h"
+#include "include/core/SkShader.h"
 
 namespace flutter {
 

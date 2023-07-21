@@ -13,10 +13,10 @@
 #include "flutter/fml/trace_event.h"
 #include "flutter/lib/ui/painting/image.h"
 #include "flutter/lib/ui/ui_dart_state.h"
-#include "third_party/skia/include/core/SkCanvas.h"
-#include "third_party/skia/include/core/SkEncodedImageFormat.h"
-#include "third_party/skia/include/core/SkImage.h"
-#include "third_party/skia/include/core/SkSurface.h"
+#include "include/core/SkCanvas.h"
+#include "include/core/SkEncodedImageFormat.h"
+#include "include/core/SkImage.h"
+#include "include/core/SkSurface.h"
 
 namespace flutter {
 

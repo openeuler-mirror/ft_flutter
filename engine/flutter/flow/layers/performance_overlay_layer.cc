@@ -7,7 +7,7 @@
 #include <string>
 
 #include "flutter/flow/layers/performance_overlay_layer.h"
-#include "third_party/skia/include/core/SkFont.h"
+#include "include/core/SkFont.h"
 
 namespace flutter {
 namespace {

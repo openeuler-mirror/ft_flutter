@@ -5,7 +5,7 @@
 #include "flutter/lib/ui/painting/picture.h"
 
 #include "flutter/lib/ui/painting/canvas.h"
-#include "third_party/skia/include/core/SkImage.h"
+#include "include/core/SkImage.h"
 #include "flutter/lib/ui/ui_dart_state.h"
 
 namespace flutter {

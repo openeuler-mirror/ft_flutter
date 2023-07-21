@@ -13,8 +13,8 @@
 #include "flutter/lib/ui/painting/frame_info.h"
 #include "flutter/lib/ui/painting/multi_frame_codec.h"
 #include "flutter/lib/ui/painting/single_frame_codec.h"
-#include "third_party/skia/include/codec/SkCodec.h"
-#include "third_party/skia/include/core/SkPixelRef.h"
+#include "include/codec/SkCodec.h"
+#include "include/core/SkPixelRef.h"
 
 #if OS_ANDROID
 #include <sys/mman.h>

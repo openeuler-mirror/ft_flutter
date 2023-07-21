@@ -8,7 +8,7 @@
 #include "flutter/fml/memory/ref_counted.h"
 #include "flutter/flow/skia_gpu_object.h"
 #include "flutter/lib/ui/painting/image.h"
-#include "third_party/skia/include/core/SkPicture.h"
+#include "include/core/SkPicture.h"
 
 
 namespace flutter {

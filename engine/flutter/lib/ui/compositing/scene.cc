@@ -7,8 +7,8 @@
 #include "flutter/fml/trace_event.h"
 #include "flutter/lib/ui/painting/image.h"
 #include "flutter/lib/ui/painting/picture.h"
-#include "third_party/skia/include/core/SkImageInfo.h"
-#include "third_party/skia/include/core/SkSurface.h"
+#include "include/core/SkImageInfo.h"
+#include "include/core/SkSurface.h"
 
 namespace flutter {
 

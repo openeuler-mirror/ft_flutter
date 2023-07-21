@@ -8,8 +8,8 @@
 #ifndef FLUTTER_FLOW_OHOS_LAYERS_PAINT_CONTEXT_H
 #define FLUTTER_FLOW_OHOS_LAYERS_PAINT_CONTEXT_H
 
-#include "third_party/skia/include/core/SkCanvas.h"
-#include "third_party/skia/include/core/SkPoint.h"
+#include "include/core/SkCanvas.h"
+#include "include/core/SkPoint.h"
 
 #include "flutter/flow/ohos_layers/texture_register.h"
 
