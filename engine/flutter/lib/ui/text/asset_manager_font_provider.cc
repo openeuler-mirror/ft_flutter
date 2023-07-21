@@ -5,10 +5,10 @@
 #include "flutter/lib/ui/text/asset_manager_font_provider.h"
 
 #include "flutter/fml/logging.h"
-#include "third_party/skia/include/core/SkData.h"
-#include "third_party/skia/include/core/SkStream.h"
-#include "third_party/skia/include/core/SkString.h"
-#include "third_party/skia/include/core/SkTypeface.h"
+#include "include/core/SkData.h"
+#include "include/core/SkStream.h"
+#include "include/core/SkString.h"
+#include "include/core/SkTypeface.h"
 
 namespace flutter {
 

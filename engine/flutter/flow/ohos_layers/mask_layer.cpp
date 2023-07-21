@@ -5,9 +5,9 @@
 
 #include "flutter/flow/ohos_layers/mask_layer.h"
 
-#include "third_party/skia/include/core/SkCanvas.h"
-#include "third_party/skia/include/core/SkMaskFilter.h"
-#include "third_party/skia/include/effects/SkLumaColorFilter.h"
+#include "include/core/SkCanvas.h"
+#include "include/core/SkMaskFilter.h"
+#include "include/effects/SkLumaColorFilter.h"
 
 #include "flutter/flow/ohos_layers/paint_context.h"
 

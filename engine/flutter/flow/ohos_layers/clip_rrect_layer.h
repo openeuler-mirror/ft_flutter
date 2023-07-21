@@ -8,7 +8,7 @@
 #ifndef FLUTTER_FLOW_OHOS_LAYERS_CLIP_RRECT_LAYER_H
 #define FLUTTER_FLOW_OHOS_LAYERS_CLIP_RRECT_LAYER_H
 
-#include "third_party/skia/include/core/SkRRect.h"
+#include "include/core/SkRRect.h"
 
 #include "flutter/flow/ohos_layers/container_layer.h"
 #include "flutter/flow/ohos_layers/layer.h"

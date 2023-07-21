@@ -6,7 +6,7 @@
 #define FLUTTER_LIB_UI_PAINTING_PICTURE_RECORDER_H_
 
 #include "flutter/lib/ui/dart_wrapper.h"
-#include "third_party/skia/include/core/SkPictureRecorder.h"
+#include "include/core/SkPictureRecorder.h"
 
 namespace tonic {
 class DartLibraryNatives;

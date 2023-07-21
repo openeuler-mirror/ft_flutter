@@ -5,7 +5,7 @@
 #include "flutter/flow/layers/physical_shape_layer.h"
 
 #include "flutter/flow/paint_utils.h"
-#include "third_party/skia/include/utils/SkShadowUtils.h"
+#include "include/utils/SkShadowUtils.h"
 
 namespace flutter {
 

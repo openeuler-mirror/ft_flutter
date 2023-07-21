@@ -8,8 +8,8 @@
 #ifndef FLUTTER_FLOW_OHOS_LAYERS_TEXTURE_LAYER_H
 #define FLUTTER_FLOW_OHOS_LAYERS_TEXTURE_LAYER_H
 
-#include "third_party/skia/include/core/SkPoint.h"
-#include "third_party/skia/include/core/SkSize.h"
+#include "include/core/SkPoint.h"
+#include "include/core/SkSize.h"
 
 #include "flutter/flow/ohos_layers/layer.h"
 

@@ -15,8 +15,8 @@
 #include "flutter/fml/logging.h"
 #include "flutter/fml/macros.h"
 #include "lib/ui/scenic/cpp/resources.h"
-#include "third_party/skia/include/core/SkRect.h"
-#include "third_party/skia/include/core/SkSurface.h"
+#include "include/core/SkRect.h"
+#include "include/core/SkSurface.h"
 
 namespace flutter {
 

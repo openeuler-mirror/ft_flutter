@@ -8,7 +8,7 @@
 #ifndef FLUTTER_FLOW_OHOS_LAYERS_OPACITY_LAYER_H
 #define FLUTTER_FLOW_OHOS_LAYERS_OPACITY_LAYER_H
 
-#include "third_party/skia/include/core/SkPoint.h"
+#include "include/core/SkPoint.h"
 
 #include "flutter/flow/ohos_layers/container_layer.h"
 

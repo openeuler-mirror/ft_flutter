@@ -5,7 +5,7 @@
 #ifndef FLUTTER_LIB_UI_PAINTING_RRECT_H_
 #define FLUTTER_LIB_UI_PAINTING_RRECT_H_
 
-#include "third_party/skia/include/core/SkRRect.h"
+#include "include/core/SkRRect.h"
 
 namespace flutter {
 

@@ -28,7 +28,7 @@
 #include "flutter/lib/ui/painting/shader.h"
 #include "flutter/lib/ui/ui_dart_state.h"
 #include "flutter/lib/ui/window/window.h"
-#include "third_party/skia/include/core/SkColorFilter.h"
+#include "include/core/SkColorFilter.h"
 
 #if defined(OS_FUCHSIA)
 #include "flutter/flow/layers/child_scene_layer.h"

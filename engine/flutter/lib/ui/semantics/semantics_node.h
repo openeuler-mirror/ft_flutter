@@ -11,8 +11,8 @@
 #include <unordered_map>
 #include <vector>
 
-#include "third_party/skia/include/core/SkMatrix44.h"
-#include "third_party/skia/include/core/SkRect.h"
+#include "include/core/SkMatrix44.h"
+#include "include/core/SkRect.h"
 
 namespace flutter {
 

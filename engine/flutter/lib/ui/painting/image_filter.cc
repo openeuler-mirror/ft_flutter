@@ -5,9 +5,9 @@
 #include "flutter/lib/ui/painting/image_filter.h"
 
 #include "flutter/lib/ui/painting/matrix.h"
-#include "third_party/skia/include/effects/SkBlurImageFilter.h"
-#include "third_party/skia/include/effects/SkImageSource.h"
-#include "third_party/skia/include/effects/SkPictureImageFilter.h"
+#include "include/effects/SkBlurImageFilter.h"
+#include "include/effects/SkImageSource.h"
+#include "include/effects/SkPictureImageFilter.h"
 
 namespace flutter {
 

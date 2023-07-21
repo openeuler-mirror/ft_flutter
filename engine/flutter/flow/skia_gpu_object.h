@@ -11,7 +11,7 @@
 #include "flutter/fml/memory/ref_counted.h"
 #include "flutter/fml/memory/weak_ptr.h"
 #include "flutter/fml/task_runner.h"
-#include "third_party/skia/include/core/SkRefCnt.h"
+#include "include/core/SkRefCnt.h"
 
 namespace flutter {
 
