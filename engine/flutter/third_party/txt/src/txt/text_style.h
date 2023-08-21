@@ -26,8 +26,8 @@
 #include "text_baseline.h"
 #include "text_decoration.h"
 #include "text_shadow.h"
-#include "third_party/skia/include/core/SkColor.h"
-#include "third_party/skia/include/core/SkPaint.h"
+#include "include/core/SkColor.h"
+#include "include/core/SkPaint.h"
 
 namespace txt {
 

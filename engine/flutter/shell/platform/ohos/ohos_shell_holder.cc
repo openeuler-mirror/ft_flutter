@@ -46,6 +46,8 @@ OhosShellHolder::OhosShellHolder(
     if (settings_.use_io_thread) {
       type_mask |= ThreadHost::Type::IO;
     }
+    
+    type_mask |= ThreadHost::Type::Platform;
     thread_host_ = {thread_label, type_mask};
   }
 
@@ -70,8 +72,9 @@ OhosShellHolder::OhosShellHolder(
   fml::RefPtr<fml::TaskRunner> gpu_runner;
   fml::RefPtr<fml::TaskRunner> ui_runner;
   fml::RefPtr<fml::TaskRunner> io_runner;
-  fml::RefPtr<fml::TaskRunner> platform_runner =
-    PlatformTaskRunnerAdapter::CurrentTaskRunner(settings_.use_current_event_runner);
+  fml::RefPtr<fml::TaskRunner> platform_runner = thread_host_.platform_thread->GetTaskRunner();
+    // PlatformTaskRunnerAdapter::CurrentTaskRunner(settings_.use_current_event_runner);  //here
+    
   if (is_background_view) {
     auto single_task_runner = thread_host_.ui_thread->GetTaskRunner();
     gpu_runner = single_task_runner;

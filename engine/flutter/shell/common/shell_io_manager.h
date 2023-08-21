@@ -11,7 +11,7 @@
 #include "flutter/fml/macros.h"
 #include "flutter/fml/memory/weak_ptr.h"
 #include "flutter/lib/ui/io_manager.h"
-#include "third_party/skia/include/gpu/GrContext.h"
+#include "include/gpu/GrContext.h"
 
 namespace flutter {
 

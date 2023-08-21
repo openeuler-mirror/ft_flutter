@@ -18,7 +18,7 @@
 
 #include "font_style.h"
 #include "font_weight.h"
-#include "third_party/skia/include/core/SkColor.h"
+#include "include/core/SkColor.h"
 #include "txt/platform.h"
 
 namespace txt {
