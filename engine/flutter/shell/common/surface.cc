@@ -5,7 +5,7 @@
 #include "flutter/shell/common/surface.h"
 
 #include "flutter/fml/logging.h"
-#include "third_party/skia/include/core/SkSurface.h"
+#include "include/core/SkSurface.h"
 
 namespace flutter {
 

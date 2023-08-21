@@ -30,7 +30,7 @@
 #include "flutter/shell/common/skia_event_tracer_impl.h"
 #include "flutter/shell/common/switches.h"
 #include "flutter/shell/common/vsync_waiter.h"
-#include "third_party/skia/include/core/SkGraphics.h"
+#include "include/core/SkGraphics.h"
 
 namespace {
 
