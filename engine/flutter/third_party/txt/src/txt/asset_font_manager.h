@@ -19,8 +19,8 @@
 
 #include <memory>
 #include "flutter/fml/macros.h"
-#include "third_party/skia/include/core/SkFontMgr.h"
-#include "third_party/skia/include/core/SkStream.h"
+#include "include/core/SkFontMgr.h"
+#include "include/core/SkStream.h"
 #include "txt/font_asset_provider.h"
 #include "txt/typeface_font_asset_provider.h"
 

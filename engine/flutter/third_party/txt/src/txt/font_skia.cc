@@ -15,7 +15,7 @@
  */
 
 #include "font_skia.h"
-#include "third_party/skia/include/core/SkFont.h"
+#include "include/core/SkFont.h"
 
 #include <minikin/MinikinFont.h>
 

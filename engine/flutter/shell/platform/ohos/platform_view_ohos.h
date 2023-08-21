@@ -19,7 +19,7 @@ public:
     void NotifyCreated(const ::OHOS::sptr<::OHOS::Rosen::Window> &window);
     void NotifyChanged(const SkISize& size);
     std::unique_ptr<Surface> CreateRenderingSurface();
-    std::unique_ptr<VsyncWaiter> CreateVSyncWaiter(int32_t platform);
+    // std::unique_ptr<VsyncWaiter> CreateVSyncWaiter(int32_t platform);
 
 private:
     std::shared_ptr<OhosSurface> surface_;

@@ -22,7 +22,7 @@
 #include "flutter/shell/common/rasterizer.h"
 #include "flutter/shell/common/run_configuration.h"
 #include "flutter/shell/common/shell_io_manager.h"
-#include "third_party/skia/include/core/SkPicture.h"
+#include "include/core/SkPicture.h"
 
 namespace flutter {
 

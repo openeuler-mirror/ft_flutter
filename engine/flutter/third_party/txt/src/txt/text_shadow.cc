@@ -15,7 +15,7 @@
  */
 
 #include "text_shadow.h"
-#include "third_party/skia/include/core/SkColor.h"
+#include "include/core/SkColor.h"
 
 namespace txt {
 
