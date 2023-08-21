@@ -8,7 +8,7 @@
 #include <string>
 #include "flutter/fml/macros.h"
 
-#include "third_party/skia/include/core/SkFontMgr.h"
+#include "include/core/SkFontMgr.h"
 
 namespace txt {
 
