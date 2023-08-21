@@ -17,8 +17,8 @@
 #ifndef LIB_TXT_SRC_TEXT_SHADOW_H_
 #define LIB_TXT_SRC_TEXT_SHADOW_H_
 
-#include "third_party/skia/include/core/SkColor.h"
-#include "third_party/skia/include/core/SkPoint.h"
+#include "include/core/SkColor.h"
+#include "include/core/SkPoint.h"
 
 namespace txt {
 

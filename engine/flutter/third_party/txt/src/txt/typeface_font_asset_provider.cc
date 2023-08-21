@@ -17,8 +17,8 @@
 #include "txt/typeface_font_asset_provider.h"
 
 #include "flutter/fml/logging.h"
-#include "third_party/skia/include/core/SkString.h"
-#include "third_party/skia/include/core/SkTypeface.h"
+#include "include/core/SkString.h"
+#include "include/core/SkTypeface.h"
 
 namespace txt {
 

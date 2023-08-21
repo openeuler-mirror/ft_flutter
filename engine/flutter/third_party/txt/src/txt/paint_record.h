@@ -21,8 +21,8 @@
 #include "flutter/fml/macros.h"
 #include "placeholder_run.h"
 #include "text_style.h"
-#include "third_party/skia/include/core/SkFontMetrics.h"
-#include "third_party/skia/include/core/SkTextBlob.h"
+#include "include/core/SkFontMetrics.h"
+#include "include/core/SkTextBlob.h"
 
 namespace txt {
 

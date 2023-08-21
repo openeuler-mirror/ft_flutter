@@ -74,9 +74,9 @@ std::unique_ptr<Surface> PlatformViewOhos::CreateRenderingSurface()
     return surface_->CreateGPUSurface();
 }
 
-std::unique_ptr<VsyncWaiter> PlatformViewOhos::CreateVSyncWaiter(int32_t platform)
-{
-    return VsyncWaiterEmbedder::Create(task_runners_);
-}
+// std::unique_ptr<VsyncWaiter> PlatformViewOhos::CreateVSyncWaiter(int32_t platform)
+// {
+//     return VsyncWaiterEmbedder::Create(task_runners_);
+// }
 
 }  // namespace flutter

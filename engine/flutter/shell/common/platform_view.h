@@ -16,8 +16,8 @@
 #include "flutter/lib/ui/window/viewport_metrics.h"
 #include "flutter/shell/common/surface.h"
 #include "flutter/shell/common/vsync_waiter.h"
-#include "third_party/skia/include/core/SkSize.h"
-#include "third_party/skia/include/gpu/GrContext.h"
+#include "include/core/SkSize.h"
+#include "include/gpu/GrContext.h"
 
 namespace flutter {
 using IdleCallback = std::function<void(int64_t)>;
