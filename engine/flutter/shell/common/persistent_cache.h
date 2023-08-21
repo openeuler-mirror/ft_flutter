@@ -13,7 +13,7 @@
 #include "flutter/fml/synchronization/thread_annotations.h"
 #include "flutter/fml/task_runner.h"
 #include "flutter/fml/unique_fd.h"
-#include "third_party/skia/include/gpu/GrContextOptions.h"
+#include "include/gpu/GrContextOptions.h"
 
 namespace flutter {
 

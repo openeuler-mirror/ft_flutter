@@ -22,8 +22,8 @@
 #include "flutter/shell/common/platform_view.h"
 #include "flutter/shell/common/shell.h"
 #include "rapidjson/document.h"
-#include "third_party/skia/include/core/SkCanvas.h"
-#include "third_party/skia/include/core/SkPictureRecorder.h"
+#include "include/core/SkCanvas.h"
+#include "include/core/SkPictureRecorder.h"
 
 namespace flutter {
 

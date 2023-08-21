@@ -8,13 +8,13 @@
 
 #include <utility>
 
-#include "third_party/skia/include/core/SkEncodedImageFormat.h"
-#include "third_party/skia/include/core/SkImageEncoder.h"
-#include "third_party/skia/include/core/SkPictureRecorder.h"
-#include "third_party/skia/include/core/SkSerialProcs.h"
-#include "third_party/skia/include/core/SkSurface.h"
-#include "third_party/skia/include/core/SkSurfaceCharacterization.h"
-#include "third_party/skia/include/utils/SkBase64.h"
+#include "include/core/SkEncodedImageFormat.h"
+#include "include/core/SkImageEncoder.h"
+#include "include/core/SkPictureRecorder.h"
+#include "include/core/SkSerialProcs.h"
+#include "include/core/SkSurface.h"
+#include "include/core/SkSurfaceCharacterization.h"
+#include "include/utils/SkBase64.h"
 
 namespace flutter {
 

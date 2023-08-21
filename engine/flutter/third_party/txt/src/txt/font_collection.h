@@ -26,8 +26,8 @@
 #include "minikin/FontCollection.h"
 #include "minikin/FontFamily.h"
 // #include "third_party/googletest/googletest/include/gtest/gtest_prod.h"  // nogncheck
-#include "third_party/skia/include/core/SkFontMgr.h"
-#include "third_party/skia/include/core/SkRefCnt.h"
+#include "include/core/SkFontMgr.h"
+#include "include/core/SkRefCnt.h"
 #include "txt/asset_font_manager.h"
 #include "txt/platform.h"
 #include "txt/text_style.h"

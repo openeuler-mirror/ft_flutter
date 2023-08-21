@@ -22,7 +22,7 @@
 #include <vector>
 
 #include "flutter/fml/macros.h"
-#include "third_party/skia/include/core/SkFontMgr.h"
+#include "include/core/SkFontMgr.h"
 #include "txt/font_asset_provider.h"
 
 namespace txt {
