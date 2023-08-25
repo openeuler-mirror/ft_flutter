@@ -119,6 +119,7 @@ template("flutter_platform_glfw") {
       # Fangtian TODO
       # "$ace_flutter_engine_root/icu:icu_config",
       ":flutter_glfw_config",
+      "//build/gn/configs/system_libs:glfw_config",
     ]
 
     sources = [
@@ -144,8 +145,6 @@ template("flutter_platform_glfw") {
       ":flutter_embedder_with_symbol_prefix_$platform",
       ":flutter_platform_common_client_wrapper",
     ]
-
-    deps += [ "$flutter_root/glfw:glfw" ]
   }
 }
 
