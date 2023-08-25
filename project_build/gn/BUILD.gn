@@ -15,5 +15,6 @@ group("ft_flutter") {
   deps = [
     "//ft_build/libtxt:thirdparty_lib_txt_fangtian",
     "//ft_build/skia:ace_skia_fangtian",
+    "//glfw:ft_glfw",
   ]
 }

@@ -1,7 +1,7 @@
 # Copyright (c) Huawei Technologies Co., Ltd. 2021-2021. All rights reserved.
 
-import("//build/gn/fangtian.gni")
-import("//third_party/flutter/glfw/glfw_ace_config.gni")
+import("//project_build/gn/fangtian.gni")
+import("glfw_ace_config.gni")
 
 config("glfw_inner_headers") {
   include_dirs = [ "include" ]
@@ -11,7 +11,7 @@ config("glfw_config_mac") {
   cflags = [ "-Wno-sign-compare" ]
 }
 
-ft_shared_library("glfw") {
+ft_shared_library("ft_glfw") {
   defines = [ "PREVIEW" ]
   include_dirs = [ "src" ]
   public = [
@@ -119,7 +119,4 @@ ft_shared_library("glfw") {
     ]
     defines += [ "_GLFW_X11" ]
   }
-
-  part_name = "graphic_standard"
-  subsystem_name = "graphic"
 }
