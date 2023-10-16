@@ -33,4 +33,5 @@ package_deps = [
     "harfbuzz-devel",
     "jsoncpp-devel",
     "expat-devel",
+    "distributed-utils",
 ]
