@@ -111,7 +111,7 @@ cd ${PROJECT_DIR}
 
 # install mesa_fangtian
 if [ ! -d ${FT_PREBUILD_DIR}/rpm/binary ]; then
-    git clone https://gitee.com/ShaoboFeng/rpm-fangtian.git ${FT_PREBUILD_DIR}/rpm/binary
+    git clone https://gitee.com/huangyuxin2023/rpm-fangtian.git ${FT_PREBUILD_DIR}/rpm/binary
 fi
 cd ${FT_PREBUILD_DIR}/rpm/binary
 ./install.sh
