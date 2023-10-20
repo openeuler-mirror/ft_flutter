@@ -13,7 +13,7 @@
 
 config("c_utils_config") {
     include_dirs = [ "${sys_inc}/c_utils" ]
-    libs = [ "utils", "sec_shared" ]
+    libs = [ "boundscheck" ]
 }
 
 config("ipc_core_config") {
