@@ -1279,7 +1279,7 @@ ft_source_set("ace_fontmgr_standard") {
   configs = [
     ":ace_fontmgr_config",
     ":ace_fontmgr_standard_config",
-    "//project_build/gn/configs/system_libs:c_utils_config",
+    "//project_build/gn/configs/system_libs:boundscheck_config",
   ]
 
   sources = [
