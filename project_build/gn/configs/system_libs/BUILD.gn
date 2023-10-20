@@ -12,12 +12,8 @@
 # limitations under the License.
 
 config("c_utils_config") {
-    include_dirs = [ "${sys_inc}/c_utils" ]
-    libs = [ "utils", "sec_shared" ]
-}
-
-config("boundscheck_config") {
-    libs = [ "boundscheck" ]
+    include_dirs = [ "${usr_inc}/c_utils" ]
+    libs = [ "utils.z", "boundscheck" ]
 }
 
 config("ipc_core_config") {
