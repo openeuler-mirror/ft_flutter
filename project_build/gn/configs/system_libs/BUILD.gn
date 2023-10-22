@@ -12,18 +12,19 @@
 # limitations under the License.
 
 config("c_utils_config") {
-    include_dirs = [ "${usr_inc}/c_utils" ]
+    include_dirs = [ "/opt/distributed-middleware-build/openeuler/compiler_include" ]
+    include_dirs += [ "${sys_inc}/c_utils" ]
     libs = [ "utils.z", "boundscheck" ]
 }
 
 config("ipc_core_config") {
-    include_dirs = [ "${sys_inc}/ipc_core" ]
-    libs = [ "ipc_core" ]
+    include_dirs = [ "${sys_inc}/ipc" ]
+    libs = [ "ipc_core.z" ]
 }
 
 config("hilog_config") {
     include_dirs = [ "${sys_inc}/hilog" ]
-    libs = [ "hilog" ]
+    libs = [ "hilog.z" ]
 }
 
 config("hitrace_meter_config") {
@@ -33,7 +34,7 @@ config("hitrace_meter_config") {
 
 config("eventhandler_config") {
     include_dirs = [ "${sys_inc}/eventhandler" ]
-    libs = [ "eventhandler" ]
+    libs = [ "eventhandler.z" ]
 }
 
 config("skia_config") {
@@ -47,5 +48,5 @@ config("glfw_config") {
 
 config("samgr_config") {
     include_dirs = [ "${sys_inc}/samgr" ]
-    libs = [ "samgr_proxy" ]
+    libs = [ "samgr_proxy.z" ]
 }

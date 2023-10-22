@@ -34,4 +34,5 @@ package_deps = [
     "jsoncpp-devel",
     "expat-devel",
     "distributed-utils",
+    "distributed-build",
 ]
