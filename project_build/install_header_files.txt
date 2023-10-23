@@ -26,7 +26,7 @@ skia/include/private/SkTLogic.h /usr/include/skia/include/private/
 skia/include/private/GrContext_Base.h /usr/include/skia/include/private/
 skia/include/private/SkTFitsIn.h /usr/include/skia/include/private/
 skia/include/private/SkTemplates.h /usr/include/skia/include/private/
-skia/include/private/SkFixed.h  /usr/include/skia/include/private/SkFixed/
+skia/include/private/SkFixed.h  /usr/include/skia/include/private/
 skia/include/private/SkDeferredDisplayList.h /usr/include/skia/include/private/
 skia/include/private/SkOnce.h /usr/include/skia/include/private/
 skia/include/private/SkFloatingPoint.h /usr/include/skia/include/private/
