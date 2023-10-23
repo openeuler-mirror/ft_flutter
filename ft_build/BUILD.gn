@@ -58,7 +58,6 @@ template("flutter_engine") {
       ":flutter_engine_fml_$platform",
       ":flutter_engine_lib_ui_$platform",
       ":flutter_engine_shell_$platform",
-      "$ace_flutter_engine_root/libtxt:thirdparty_lib_txt_$platform",
     ]
     public_configs = [
       ":flutter_config",

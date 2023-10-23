@@ -117,4 +117,98 @@ cd ${FT_PREBUILD_DIR}/rpm/binary
 ./install.sh
 cd ${PROJECT_DIR}
 
+# copy flutter include files to /usr/local/include.
+sudo mkdir -p /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/asset_font_manager.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/font_asset_provider.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/font_collection.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/font_features.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/font_skia.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/font_style.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/font_weight.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/paint_record.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/paragraph_builder.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/paragraph_builder_txt.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/paragraph.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/paragraph_style.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/paragraph_txt.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/placeholder_run.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/platform.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/styled_runs.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/test_font_manager.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/text_baseline.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/text_decoration.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/text_shadow.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/text_style.h /usr/local/include/flutter/txt
+sudo cp -fr engine/flutter/third_party/txt/src/txt/typeface_font_asset_provider.h /usr/local/include/flutter/txt
+
+sudo mkdir -p /usr/local/include/flutter/txt/utils
+sudo cp -fr engine/flutter/third_party/txt/src/utils/JenkinsHash.h /usr/local/include/flutter/txt/utils
+sudo cp -fr engine/flutter/third_party/txt/src/utils/LruCache.h /usr/local/include/flutter/txt/utils
+sudo cp -fr engine/flutter/third_party/txt/src/utils/TypeHelpers.h /usr/local/include/flutter/txt/utils
+sudo cp -fr engine/flutter/third_party/txt/src/utils/WindowsUtils.h /usr/local/include/flutter/txt/utils
+
+sudo mkdir -p /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/CmapCoverage.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/Emoji.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/FontCollection.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/FontFamily.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/FontLanguage.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/FontLanguageListCache.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/FontUtils.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/GraphemeBreak.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/HbFontCache.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/Hyphenator.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/Layout.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/LayoutUtils.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/LineBreaker.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/Measurement.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/MinikinFont.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/MinikinInternal.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/SparseBitSet.h /usr/local/include/flutter/txt/minikin
+sudo cp -fr engine/flutter/third_party/txt/src/minikin/WordBreaker.h /usr/local/include/flutter/txt/minikin
+
+sudo mkdir -p /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/base32.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/build_config.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/closure.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/command_line.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/compiler_specific.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/concurrent_message_loop.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/delayed_task.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/eintr_wrapper.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/file.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/gpu_thread_merger.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/icu_util.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/logging.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/log_level.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/log_settings.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/macros.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/make_copyable.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/mapping.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/message.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/message_loop.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/message_loop_impl.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/message_loop_task_queues.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/native_library.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/paths.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/size.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/status.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/task_runner.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/thread.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/thread_local.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/trace_event.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/unique_fd.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/unique_object.h /usr/local/include/flutter/fml
+sudo cp -fr engine/flutter/fml/wakeable.h /usr/local/include/flutter/fml
+
+sudo mkdir -p /usr/local/include/flutter/fml/memory
+sudo cp -fr engine/flutter/fml/memory/ref_counted.h /usr/local/include/flutter/fml/memory
+sudo cp -fr engine/flutter/fml/memory/ref_counted_internal.h /usr/local/include/flutter/fml/memory
+sudo cp -fr engine/flutter/fml/memory/ref_ptr.h /usr/local/include/flutter/fml/memory
+sudo cp -fr engine/flutter/fml/memory/ref_ptr_internal.h /usr/local/include/flutter/fml/memory
+sudo cp -fr engine/flutter/fml/memory/thread_checker.h /usr/local/include/flutter/fml/memory
+sudo cp -fr engine/flutter/fml/memory/weak_ptr.h /usr/local/include/flutter/fml/memory
+sudo cp -fr engine/flutter/fml/memory/weak_ptr_internal.h /usr/local/include/flutter/fml/memory
+
 echo -e "\033[32m[*] Pre-build Done. You need exec 'build.sh'.\033[0m"

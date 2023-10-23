@@ -56,7 +56,7 @@ template("flutter_engine") {
       ":flutter_engine_fml_$platform",
       ":flutter_engine_lib_ui_$platform",
       ":flutter_engine_shell_$platform",
-      
+
       "$ace_flutter_engine_root/libtxt:thirdparty_lib_txt_$platform",
     ]
     public_configs = [
@@ -368,35 +368,14 @@ template("flutter_engine_shell") {
       ":flutter_engine_lib_ui_$platform",
       "$ace_flutter_engine_root/skia:ace_skia_$platform",
     ]
-    display_server_root = "//third_party/ft_engine/display_server"
+
     if (platform == "fangtian") {
         defines += [
           "OHOS_STANDARD_SYSTEM",
         ]
     }
     if (is_standard_system && (platform == "ohos" || platform == "fangtian")) {
-      include_dirs = [
-        "//third_party/ft_engine/window_manager/interfaces/innerkits",
-
-        "$display_server_root/rosen/modules",
-        "$display_server_root/rosen/modules/render_service_client/core",
-        "$display_server_root/rosen/modules/render_service_base/include",
-        "$display_server_root/rosen/modules/render_service_base/src/platform/fangtian/include",
-        "$display_server_root/rosen/modules/platform/image_native",
-        "$display_server_root/rosen/modules/2d_graphics/src",
-        "$display_server_root/rosen/modules/composer/hdi_backend/include",
-        "$display_server_root/rosen/modules/composer/vsync/include",
-
-        "$display_server_root/rosen/include/common",
-        "$display_server_root/interfaces/inner_api/common",
-        "$display_server_root/interfaces/inner_api/surface",
-        "$display_server_root/interfaces/inner_api/composer",
-        
-        "$display_server_root/utils/sandbox",
-        "$display_server_root/utils/buffer_handle/export",
-      ]
       sources += [
-        #"$flutter_root/engine/flutter/shell/platform/ohos/ace_vsync_waiter_embedder.cc",
         "$flutter_root/engine/flutter/shell/platform/ohos/ohos_shell_holder.cc",
         "$flutter_root/engine/flutter/shell/platform/ohos/ohos_surface_software.cc",
         "$flutter_root/engine/flutter/shell/platform/ohos/platform_task_runner.cc",
@@ -414,14 +393,11 @@ template("flutter_engine_shell") {
       deps += [
         "//build/gn/configs/system_libs:image",
         "//build/gn/configs/system_libs:eventhandler",
-      ]
-      deps += [
         "//build/gn/configs/system_libs:c_utils",
-      ]
-      deps += [
         "//build/gn/configs/system_libs:ftsurface",
+        "//build/gn/configs/system_libs:ft_engine",
       ]
-    } 
+    }
   }
 }
 
