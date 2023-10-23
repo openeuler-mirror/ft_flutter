@@ -50,8 +50,6 @@ fi
 SCRIPT_DIR=$(cd $(dirname $0);pwd)
 PROJECT_DIR=$(dirname ${SCRIPT_DIR})
 
-pip3 install -r ${SCRIPT_DIR}/configs/requirements.txt
-
 # =============================================================================
 # System Packages
 # =============================================================================

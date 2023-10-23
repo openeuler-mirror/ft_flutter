@@ -84,6 +84,21 @@ class Builder:
             rst = self.copy_all_file(os.path.join(self.project_dir, "ft_build/fonts/"), "/usr/share/fonts/ft_fonts")
             if rst == False : return False 
 
+        if self.args.install:
+            # Install header files
+            install_header_files = open(os.path.join(self.project_dir, "project_build/install_header_files.txt"))
+            headers = install_header_files.readlines()
+            for header in headers:
+                if header.strip().startswith("#"): continue
+                header = header.rstrip('').rstrip('\n')
+                lit = header.split()
+                if len(lit) == 2 :
+                    if not os.path.exists(lit[1]):
+                        rst = exec_sys_command(['sudo', 'mkdir', '-p', lit[1]])
+                        if rst[0] == False : return False
+                    rst = exec_sys_command(['sudo', 'cp', '-rf', lit[0], lit[1]])
+                    if rst[0] == False : return False
+            install_header_files.close()
         return True
 
     def launch_gn(self) -> bool:
