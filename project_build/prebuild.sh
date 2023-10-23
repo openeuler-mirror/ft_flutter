@@ -76,24 +76,7 @@ fi
 cd ${PREBUILD_DIR}
 FT_PREBUILD_DIR=$(pwd)
 
-# install prebuild library
-if [ ! -d ${FT_PREBUILD_DIR}/libs ]; then
-git clone https://gitee.com/yanansong/ft_engine_prebuild.git -b rpms ${FT_PREBUILD_DIR}/libs
-fi
-
 ARCHNAME=`uname -m`
-
-cd ${FT_PREBUILD_DIR}/libs/rpms/${ARCHNAME}
-sudo ./installRPM
-
-# install prebuild include.
-if [ ! -d ${FT_PREBUILD_DIR}/inc ]; then
-git clone https://gitee.com/yanansong/devel_inc.git ${FT_PREBUILD_DIR}/inc
-fi
-
-# copy include files to /usr/include.
-cd ${FT_PREBUILD_DIR}/inc
-sudo cp -fr * /usr/local/include
 
 # install ft_surface_wrapper
 if [ ! -d ${FT_PREBUILD_DIR}/rpm/ft_surface_wrapper ]; then
@@ -111,7 +94,7 @@ cd ${PROJECT_DIR}
 
 # install mesa_fangtian
 if [ ! -d ${FT_PREBUILD_DIR}/rpm/binary ]; then
-    git clone https://gitee.com/ShaoboFeng/rpm-fangtian.git ${FT_PREBUILD_DIR}/rpm/binary
+    git clone https://gitee.com/huangyuxin2023/rpm-fangtian.git ${FT_PREBUILD_DIR}/rpm/binary
 fi
 cd ${FT_PREBUILD_DIR}/rpm/binary
 ./install.sh
